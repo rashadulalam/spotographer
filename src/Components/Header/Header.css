@@ -1,0 +1,21 @@
+
+.navbar-nav .nav-link:last-child {
+    background-color: #7952B3;
+    color: #fff;
+    border: 1px solid transparent;
+    padding: 7px 25px;
+    border-radius: 10px;
+    
+
+}
+
+.navbar-nav .nav-link:last-child:hover {
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    color: #fff;
+}
+@media (min-width: 1200px) {
+    .navbar-nav .nav-link {
+        margin-left: 15px;
+    }
+}

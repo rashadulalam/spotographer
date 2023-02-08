@@ -1,0 +1,23 @@
+.single_service {
+    background-color: #fff;
+    transition: all .5s;
+}
+.single_service:hover {
+    transform: translateY(-5px);
+}
+h3 {
+    font-size: 20px;
+}
+h5 {
+    font-size: 16px;
+    color: #7952B3;
+}
+button.serviceBtn {
+    background-color: #7952B3;
+    border: 1px solid #fff;
+}
+button.serviceBtn:hover {
+    background-color: transparent;
+    border: 1px solid #7952B3;
+    color: #7952B3;
+}
