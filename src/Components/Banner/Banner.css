@@ -15,10 +15,14 @@ button.sportBtn:hover {
     border-radius: 15px;
     top: 50%;
     width: 550px;
+    justify-content: center;
     left: 50%;
     transform: translate(-50%, -50%);
-
+    align-items: center;
+    display: flex;
+    flex-direction: column;
 }
+
 .carousel-caption h3 {
     font-size: 50px;
 }
