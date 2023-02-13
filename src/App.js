@@ -1,17 +1,21 @@
-import Banner from './Components/Banner/Banner';
-import Footer from './Components/Footer/Footer';
-import Gallery from './Components/Gallery/Gallery';
-import Header from './Components/Header/Header';
-import Services from './Components/Services/Services';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import {Header} from './Components';
+import {Home, Blogs, About, Login, NoPage} from './Pages';
 
 function App() {
   return (
     <>
-      <Header />
-      <Banner />
-      <Services />
-      <Gallery />
-      <Footer />
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Header />}>
+              <Route index element={<Home />} />
+              <Route path="blogs" element={<Blogs />} />
+              <Route path="About" element={<About />} />
+              <Route path="login" element={<Login />} />
+              <Route path="*" element={<NoPage />} />
+            </Route>
+          </Routes>
+        </BrowserRouter>
     </>
   );
 }
