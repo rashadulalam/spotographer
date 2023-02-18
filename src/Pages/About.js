@@ -1,4 +1,4 @@
-import { Hero, AboutBlock, Footer } from "../Components";
+import { Hero, AboutBlock } from "../Components";
 import AboutHero from '../images/about-hero.jpg';
 
 const About = () => {
@@ -6,7 +6,6 @@ const About = () => {
         <>
             <Hero heroImg={AboutHero} />
             <AboutBlock />
-            <Footer />
         </>
     )
 }

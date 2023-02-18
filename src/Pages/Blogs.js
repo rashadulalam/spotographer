@@ -1,4 +1,4 @@
-import { Hero, SectionHeading, Footer} from "../Components";
+import { Hero, SectionHeading} from "../Components";
 import Blog from "../Components/Blog/Blog";
 import {Container, Row} from 'react-bootstrap';
 import AboutHero from '../images/about-hero.jpg';
@@ -25,7 +25,6 @@ const Blogs = () => {
             </Blog>
             </Row>
         </Container>
-        <Footer />
         
        
     </>

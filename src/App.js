@@ -1,21 +1,19 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import {Header} from './Components';
+import {Routes, Route} from 'react-router-dom';
+import {Header, Footer} from './Components';
 import {Home, Blogs, About, Login, NoPage} from './Pages';
 
 function App() {
   return (
     <>
-        <BrowserRouter>
-          <Routes>
-            <Route path="/" element={<Header />}>
-              <Route index element={<Home />} />
-              <Route path="blogs" element={<Blogs />} />
-              <Route path="About" element={<About />} />
-              <Route path="login" element={<Login />} />
-              <Route path="*" element={<NoPage />} />
-            </Route>
-          </Routes>
-        </BrowserRouter>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route Path="/about" element={<About />} />
+          <Route Path="/blog" element={<Blogs />} />
+          <Route Path="/login" element={<Login />} />
+          <Route path="*" element={<NoPage />} />
+        </Routes>
+        <Footer />
     </>
   );
 }
