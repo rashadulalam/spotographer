@@ -8,9 +8,9 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route Path="/about" element={<About />} />
-          <Route Path="/blog" element={<Blogs />} />
-          <Route Path="/login" element={<Login />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/blog" element={<Blogs />} />
+          <Route path="/login" element={<Login />} />
           <Route path="*" element={<NoPage />} />
         </Routes>
         <Footer />
